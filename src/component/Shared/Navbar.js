@@ -1,10 +1,35 @@
 import Image from "next/image";
 import logo from "../../assets/logo.png";
+import Link from "next/link";
 
 const Navbar = () => {
+  const menu = (
+    <>
+      <li>
+        <Link href={"/"} className="tracking-[0.04rem]">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link href={"/"} className="tracking-[0.04rem]">
+          Wishlist
+        </Link>
+      </li>
+      <li>
+        <Link href={"/"} className="tracking-[0.04rem]">
+          About
+        </Link>
+      </li>{" "}
+      <li>
+        <Link href={"/"} className="tracking-[0.04rem]">
+          Contact
+        </Link>
+      </li>
+    </>
+  );
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm px-28">
+      <div className="navbar bg-base-100 shadow-sm px-36">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,23 +50,7 @@ const Navbar = () => {
             <ul
               tabIndex={0}
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+              {menu}
             </ul>
           </div>
           <div>
@@ -49,30 +58,25 @@ const Navbar = () => {
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
+          <ul className="menu menu-horizontal px-1">{menu}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <a className="btn">
+            <svg
+              width="15px"
+              height="15px"
+              viewBox="0 0 24 24"
+              id="Layer_1"
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle class="cls-1" cx="12" cy="7.25" r="5.73" />
+              <path
+                class="cls-1"
+                d="M1.5,23.48l.37-2.05A10.3,10.3,0,0,1,12,13h0a10.3,10.3,0,0,1,10.13,8.45l.37,2.05"
+              />
+            </svg>
+            Log In
+          </a>
         </div>
       </div>
     </div>
