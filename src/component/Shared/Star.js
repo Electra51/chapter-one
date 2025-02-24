@@ -1,7 +1,6 @@
 import React from "react";
-import { AiOutlineStar } from "react-icons/ai";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-
+import { AiOutlineStar } from "react-icons/ai";
 const Star = ({ ratingPoint }) => {
   // console.log(ratingPoint);
   const ratingStar = Array.from({ length: 5 }, (elem, index) => {
