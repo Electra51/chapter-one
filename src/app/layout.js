@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light">
       <body className={poppins.className}>
         <Navbar />
-        <div className="h-screen">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </body>
     </html>
