@@ -8,11 +8,20 @@ export const metadata = {
 };
 
 const HomePage = async () => {
-  const res = await fetch("https://boighor-server-electra51.vercel.app/books");
+  const res = await fetch("https://boighor-server-electra51.vercel.app/books", {
+    next: {
+      revalidate: 5,
+    },
+  });
   const data = await res.json();
   console.log("data", data?.data);
   const resentRes = await fetch(
-    "https://boighor-server-electra51.vercel.app/getbooks"
+    "https://boighor-server-electra51.vercel.app/getbooks",
+    {
+      next: {
+        revalidate: 5,
+      },
+    }
   );
   const resentdata = await resentRes.json();
   console.log("resentdata", data?.data);
