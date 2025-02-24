@@ -8,13 +8,16 @@ const Banner = () => {
         <p className="text-[18px] mt-6 w-[650px] tracking-[0.01rem]">
           Year end sale
         </p>
-        <p className="font-bold text-6xl text-[#DF7A58] mt-3 tracking-[0.1rem]">
-          Get 70% Off For Each Design Books
+        <p className="font-bold text-6xl text-[#DF7A58] mt-3 tracking-[0.1rem] leading-16 w-[670px]">
+          Get 70% Off, Each Design Books
         </p>
         <p className="text-[18px] mt-3 w-[650px] tracking-[0.01rem]">
           Find the perfect read, enjoy great deals, and bring your next favorite
           book home today!
         </p>
+        <button className="mt-6 bg-[#DF7A58] px-5 py-1.5 text-center text-white cursor-pointer hover:bg-[#59C2DA]">
+          Shop Now
+        </button>
       </div>
       <Image src={banner1Image} alt="" />
     </div>
