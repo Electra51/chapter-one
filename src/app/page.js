@@ -1,6 +1,7 @@
 import Banner from "@/component/Banner";
 import BookCollection from "@/component/BookCollection";
 import ResentCollection from "@/component/Shared/ResentCollection";
+import TopCategories from "@/component/TopCategories";
 
 export const metadata = {
   title: "Chapter One | Home page",
@@ -31,6 +32,7 @@ const HomePage = async () => {
         <Banner />
       </div>
       <ResentCollection resentdata={resentdata} />
+      <TopCategories />
       <BookCollection data={data} />
     </div>
   );

@@ -4,7 +4,7 @@ const ResentCollection = ({ resentdata }) => {
   console.log("resentdata", resentdata);
   return (
     <div className="max-w-[1300px] mx-auto py-[100px]">
-      <p className="text-center font-bold text-2xl border-0 border-b border-gray-300 pb-1 mb-28 mx-auto w-[210px]">
+      <p className="font-bold text-2xl border-0 border-b border-gray-300 pb-1 mb-24 mr-auto w-[210px]">
         Featured Books
       </p>
       <div className="grid grid-cols-4 gap-6">
