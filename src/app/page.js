@@ -1,5 +1,6 @@
 import Banner from "@/component/Banner";
-import BestSellingBooks from "@/component/BestSellingBooks";
+import BestCollection from "@/component/BestCollection";
+import BestSellingBooks from "@/component/BestCollection";
 import BookCollection from "@/component/BookCollection";
 import ResentCollection from "@/component/Shared/ResentCollection";
 import TopCategories from "@/component/TopCategories";
@@ -29,12 +30,10 @@ const HomePage = async () => {
   console.log("resentdata", data?.data);
   return (
     <div>
-      <div>
-        <Banner />
-      </div>
+      <Banner />
       <ResentCollection resentdata={resentdata} />
       <TopCategories />
-      <BestSellingBooks bestSell={data} />
+      <BestCollection bestSell={data} />
       <BookCollection data={data} />
     </div>
   );
