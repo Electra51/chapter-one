@@ -1,15 +1,13 @@
 import Star from "./Shared/Star";
 
 const BookCollection = ({ data }) => {
-  console.log("data", data);
   return (
     <div className="max-w-[1300px] mx-auto py-[100px]">
-      <p className="text-center font-bold text-2xl border-0 border-b border-gray-300 pb-1 mb-28 mx-auto w-[210px]">
+      <p className="font-bold text-2xl border-0 border-b border-gray-300 pb-1 mb-12 mr-auto w-[210px]">
         Our Collections
       </p>
       <div className="grid grid-cols-4 gap-6">
         {data?.data?.map((e, i) => {
-          console.log("e", e);
           return (
             <div key={i}>
               <div className="bg-base-100 shadow-md border border-gray-200 h-[460px]">
