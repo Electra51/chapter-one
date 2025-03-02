@@ -23,8 +23,7 @@ const Star = ({ ratingPoint }) => {
         <span className="text-[0.8rem] text-center">no reviews</span>
       ) : (
         <div className="flex gap-[1px] items-center justify-center">
-          {ratingPoint}
-          {ratingStar}
+          {ratingStar} ({ratingPoint})
         </div>
       )}
     </div>

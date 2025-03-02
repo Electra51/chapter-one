@@ -3,7 +3,7 @@ import React from "react";
 import bsImg from "../assets/bs.webp";
 import bs1Img from "../assets/bs1.png";
 import Image from "next/image";
-const BestCollection = ({ bestSell }) => {
+const BestCollection = () => {
   return (
     <div className="py-28">
       <div
@@ -28,7 +28,7 @@ const BestCollection = ({ bestSell }) => {
         </div>
 
         <div>
-          <Image src={bs1Img} alt="" />
+          <Image src={bs1Img} alt="" className="" />
         </div>
       </div>
     </div>

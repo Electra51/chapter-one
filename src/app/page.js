@@ -2,6 +2,7 @@ import Banner from "@/component/Banner";
 import BestCollection from "@/component/BestCollection";
 import BestSellingBooks from "@/component/BestCollection";
 import BookCollection from "@/component/BookCollection";
+import PIckRightOne from "@/component/PIckRightOne";
 import ResentCollection from "@/component/Shared/ResentCollection";
 import TopCategories from "@/component/TopCategories";
 
@@ -17,7 +18,7 @@ const HomePage = async () => {
     },
   });
   const data = await res.json();
-  console.log("data", data?.data);
+  // console.log("data", data?.data);
   const resentRes = await fetch(
     "https://boighor-server-electra51.vercel.app/getbooks",
     {
@@ -27,14 +28,15 @@ const HomePage = async () => {
     }
   );
   const resentdata = await resentRes.json();
-  console.log("resentdata", data?.data);
+  // console.log("resentdata", data?.data);
   return (
     <div>
       <Banner />
       <ResentCollection resentdata={resentdata} />
       <TopCategories />
-      <BestCollection bestSell={data} />
+      <PIckRightOne data={data?.data} />
       <BookCollection data={data} />
+      <BestCollection />
     </div>
   );
 };
