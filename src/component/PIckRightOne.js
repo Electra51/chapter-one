@@ -1,5 +1,7 @@
 import React from "react";
 import Star from "./Shared/Star";
+import img4 from "../assets/author.png";
+import Image from "next/image";
 
 const PIckRightOne = ({ data }) => {
   return (
@@ -17,7 +19,19 @@ const PIckRightOne = ({ data }) => {
                 <Star ratingPoint={data[0].rating} />
               </div>
               <h2 className="font-semibold">{data[0].title}</h2>
-              <p className="underline font-normal my-2">{data[0]?.author}</p>
+
+              <div className="flex justify-normal items-center gap-2">
+                {" "}
+                <Image
+                  src={img4}
+                  alt={data[0]?.author}
+                  height={30}
+                  width={30}
+                />{" "}
+                <p className="underline font-normal my-2 text-gray-500 text-[14px]">
+                  {data[0]?.author}
+                </p>
+              </div>
 
               <p className="text-justify">
                 {data[0].description.slice(0, 210) + "..."}

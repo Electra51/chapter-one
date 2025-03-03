@@ -13,6 +13,7 @@ import Image from "next/image";
 import img1 from "../assets/img3.png";
 import img2 from "../assets/book2.jpeg";
 import img3 from "../assets/book1.jpeg";
+
 const books = [
   {
     id: 1,

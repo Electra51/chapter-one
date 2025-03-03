@@ -36,8 +36,9 @@ const HomePage = async () => {
       <ResentCollection resentdata={resentdata} />
       <ExtraShop />
       <TopCategories />
-      <PIckRightOne data={data?.data} />
       <BestCollection />
+      <PIckRightOne data={data?.data} />
+
       <BookCollection data={data} />
     </div>
   );
