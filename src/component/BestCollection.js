@@ -5,7 +5,7 @@ import bs1Img from "../assets/bs1.png";
 import Image from "next/image";
 const BestCollection = () => {
   return (
-    <div className="py-28">
+    <div className="">
       <div
         className="max-w-[1300px] mx-auto rounded-sm grid grid-cols-2 gap-5"
         style={{

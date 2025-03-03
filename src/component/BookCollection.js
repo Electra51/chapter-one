@@ -15,7 +15,7 @@ const BookCollection = ({ data }) => {
   };
 
   return (
-    <div className="max-w-[1300px] mx-auto py-[100px]">
+    <div className="max-w-[1300px] mx-auto">
       <p className="font-bold text-2xl border-0 border-b border-gray-300 pb-1 mb-12 mr-auto w-[210px]">
         Our Collections
       </p>
@@ -34,7 +34,9 @@ const BookCollection = ({ data }) => {
                 <Star ratingPoint={e?.rating} />
 
                 <div className="card-actions justify-center mt-5">
-                  <button className="btn btn-primary">View Details</button>
+                  <button className="rounded-sm hover:bg-[#59C2DA] bg-[#225f82] px-5 py-1.5 text-center text-white cursor-pointer">
+                    View Details
+                  </button>
                 </div>
               </div>
             </div>
@@ -47,13 +49,13 @@ const BookCollection = ({ data }) => {
         {visibleItems < totalItems ? (
           <button
             onClick={handleViewMore}
-            className="btn btn-secondary px-6 py-2 mr-4">
+            className="rounded-sm hover:bg-[#59C2DA] bg-[#225f82] px-5 py-1.5 text-center text-white cursor-pointer mr-4">
             View More
           </button>
         ) : (
           <button
             onClick={handleShowLess}
-            className="btn btn-secondary px-6 py-2">
+            className="mt-6 rounded-sm hover:bg-[#59C2DA] bg-[#225f82] px-5 py-1.5 text-center text-white cursor-pointer">
             Show Less
           </button>
         )}

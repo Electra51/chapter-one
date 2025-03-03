@@ -15,7 +15,7 @@ const Banner = () => {
           Find the perfect read, enjoy great deals, and bring your next favorite
           book home today!
         </p>
-        <button className="mt-6 bg-[#DF7A58] px-5 py-1.5 text-center text-white cursor-pointer hover:bg-[#59C2DA]">
+        <button className="mt-6 rounded-sm hover:bg-[#59C2DA] bg-[#225f82] px-5 py-1.5 text-center text-white cursor-pointer">
           Shop Now
         </button>
       </div>

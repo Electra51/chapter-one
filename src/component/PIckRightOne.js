@@ -10,17 +10,17 @@ const PIckRightOne = ({ data }) => {
       </p>
       <div className="grid grid-cols-2 gap-6">
         <div>
-          <div className="flex justify-normal items-start gap-5">
+          <div className="flex justify-normal items-start gap-5 border border-gray-100">
             <img src={data[0]?.image} alt={data[0]?.title} width={240} />
-            <div>
-              <div className="flex justify-start items-start">
+            <div className="pr-6 pl-2">
+              <div className="flex justify-start items-start pt-2">
                 <Star ratingPoint={data[0].rating} />
               </div>
               <h2 className="font-semibold">{data[0].title}</h2>
               <p className="underline font-normal my-2">{data[0]?.author}</p>
 
               <p className="text-justify">
-                {data[0].description.slice(0, 310) + "..."}
+                {data[0].description.slice(0, 210) + "..."}
               </p>
               <p className="mt-5">$ {data[0].price}.00</p>
               <button className="hover:bg-[#59C2DA] bg-[#225f82] text-white px-2 py-1 mt-5 rounded-sm text-[14px]">
