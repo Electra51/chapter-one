@@ -2,7 +2,6 @@ import React from "react";
 import Star from "./Shared/Star";
 
 const PIckRightOne = ({ data }) => {
-  // console.log("data************************", data);
   return (
     <div className="max-w-[1320px] mx-auto py-20">
       {" "}

@@ -6,6 +6,7 @@ import fictionImg from "../assets/top-category-img/fiction.png";
 import historyImg from "../assets/top-category-img/history.png";
 import romanceImg from "../assets/top-category-img/romance.png";
 import bannerImg from "../assets/top-category-img/top-categogries-img-banner.png";
+
 const TopCategories = () => {
   return (
     <div className="bg-blue-100 py-28">

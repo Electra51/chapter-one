@@ -35,8 +35,8 @@ const HomePage = async () => {
       <ResentCollection resentdata={resentdata} />
       <TopCategories />
       <PIckRightOne data={data?.data} />
-      <BookCollection data={data} />
       <BestCollection />
+      <BookCollection data={data} />
     </div>
   );
 };
