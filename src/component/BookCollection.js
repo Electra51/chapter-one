@@ -15,7 +15,7 @@ const BookCollection = ({ data }) => {
   };
 
   return (
-    <div className="max-w-[1300px] mx-auto">
+    <div className="max-w-[1320px] mx-auto">
       <p className="font-bold text-2xl border-0 border-b border-gray-300 pb-1 mb-12 mr-auto w-[210px]">
         Our Collections
       </p>

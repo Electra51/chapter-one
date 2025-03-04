@@ -6,3 +6,7 @@
 .best {
   font-family: "Monomakh", serif;
 }
+input,
+select:focus {
+  outline: none;
+}

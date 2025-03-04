@@ -5,6 +5,7 @@ import BookCollection from "@/component/BookCollection";
 import ExtraShop from "@/component/ExtraShop";
 import PIckRightOne from "@/component/PIckRightOne";
 import ResentCollection from "@/component/Shared/ResentCollection";
+import Subscribe from "@/component/Subscribe";
 import TopCategories from "@/component/TopCategories";
 
 export const metadata = {
@@ -38,8 +39,8 @@ const HomePage = async () => {
       <TopCategories />
       <BestCollection />
       <PIckRightOne data={data?.data} />
-
       <BookCollection data={data} />
+      <Subscribe />
     </div>
   );
 };
