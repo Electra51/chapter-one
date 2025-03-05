@@ -1,6 +1,5 @@
 import Banner from "@/component/Banner";
 import BestCollection from "@/component/BestCollection";
-import BestSellingBooks from "@/component/BestCollection";
 import BookCollection from "@/component/BookCollection";
 import ExtraShop from "@/component/ExtraShop";
 import PIckRightOne from "@/component/PIckRightOne";

@@ -1,20 +1,24 @@
 import Image from "next/image";
 import booksCover from "../../assets/booksCover.jpg";
-import Card from "@/component/Shared/Card";
+import SearchFilter from "@/component/SearchFilter";
+
+export const metadata = {
+  title: "Chapter One | Book page",
+  description: "Design and developed by Safayet Nur using create next app",
+};
 
 const BooksPage = async () => {
   const res = await fetch("https://boighor-server-electra51.vercel.app/books", {
-    next: {
-      revalidate: 5,
-    },
+    next: { revalidate: 5 },
   });
   const data = await res.json();
+
   return (
     <div className="max-w-[1400px] mx-auto">
-      <div className="max-w-[1390px] h-[500px] rounded-sm relative mb-24">
+      <div className="max-w-[1390px] h-[500px] rounded-sm relative mb-18">
         <Image
           src={booksCover}
-          alt=""
+          alt="Books Cover"
           className="h-full w-full object-fill rounded-sm"
         />
         <div className="absolute top-[36%] left-[35%] text-white">
@@ -26,11 +30,7 @@ const BooksPage = async () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-6 mb-24">
-        {data?.data?.map((e, i) => {
-          return <Card e={e} key={i} />;
-        })}
-      </div>
+      <SearchFilter data={data} />
     </div>
   );
 };
