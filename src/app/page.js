@@ -30,7 +30,7 @@ const HomePage = async () => {
     }
   );
   const resentdata = await resentRes.json();
-  // console.log("resentdata", data?.data);
+
   return (
     <div>
       <Banner />
