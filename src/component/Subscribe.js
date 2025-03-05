@@ -14,7 +14,7 @@ const Subscribe = () => {
           <p className="font-medium text-[16px] pb-1 mb-2 text-white">
             Stay In The Know.
           </p>
-          <p className="uppercase text-[18px] text-white tracking-[0.1rem] font-semibold text-wrap">
+          <p className="uppercase text-center text-[18px] text-white tracking-[0.1rem] font-semibold text-wrap">
             Submit your email to receive exclusive B&N Press updates & special
             offers.
           </p>

@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="bg-[#000000]">
-        <div className="container px-6 py-12 mx-auto">
+        <div className="max-w-[1400px] px-6 py-12 mx-auto">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div className="sm:col-span-2">
               <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">
@@ -126,7 +126,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="text-gray-400 p-8 text-start md:text-center md:text-md md:p-4">
-            © 2023 You Company Inc. All rights reserved.
+            © 2025 You Company Inc. All rights reserved.
           </p>
         </div>
       </footer>

@@ -2,7 +2,7 @@ import Star from "./Star";
 
 const ResentCollection = ({ resentdata }) => {
   return (
-    <div className="max-w-[1320px] mx-auto py-28">
+    <div className="max-w-[1400px] mx-auto py-28">
       <p className="font-bold text-2xl border-0 border-b border-gray-300 pb-1 mb-18 mr-auto w-[210px]">
         Featured Books
       </p>

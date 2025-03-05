@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const ExtraShop = () => {
-//   return (
-//     <div>ExtraShop</div>
-//   )
-// }
-
-// export default ExtraShop
-
 "use client";
 import Image from "next/image";
 import img1 from "../assets/img3.png";
@@ -19,7 +9,7 @@ const books = [
     id: 1,
     title: "COLLECT SHOP",
     subtitle: "Game. Anime. Life",
-    image: img1, // Replace with actual image path
+    image: img1,
     bgColor: "bg-gradient-to-r from-[#142D4C] to-[#203647]",
   },
   {
@@ -40,7 +30,7 @@ const books = [
 
 const ExtraShop = () => {
   return (
-    <div className="max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mb-42">
+    <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mb-42">
       {books.map((book) => (
         <div
           key={book.id}

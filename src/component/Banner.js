@@ -4,7 +4,7 @@ import banner1Image from "../assets/slider.webp";
 const Banner = () => {
   return (
     <div className="relative">
-      <div className=" absolute top-[30%] left-40 w-[760px]">
+      <div className=" absolute top-[30%] left-44 w-[760px]">
         <p className="text-[18px] mt-6 w-[650px] tracking-[0.01rem]">
           Year end sale
         </p>
