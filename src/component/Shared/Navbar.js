@@ -16,7 +16,7 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link href={"/books"} className="tracking-[0.04rem]">
+        <Link href={"/book"} className="tracking-[0.04rem]">
           Books
         </Link>
       </li>{" "}

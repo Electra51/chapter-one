@@ -1,6 +1,7 @@
 import Image from "next/image";
 import booksCover from "../../assets/booksCover.jpg";
 import Star from "@/component/Shared/Star";
+import Link from "next/link";
 const BooksPage = async () => {
   const res = await fetch("https://boighor-server-electra51.vercel.app/books", {
     next: {
@@ -8,7 +9,6 @@ const BooksPage = async () => {
     },
   });
   const data = await res.json();
-  console.log("data", data?.data);
   return (
     <div className="max-w-[1400px] mx-auto">
       <div className="max-w-[1390px] h-[500px] rounded-sm relative mb-24">
@@ -43,9 +43,11 @@ const BooksPage = async () => {
                   <Star ratingPoint={e?.rating} />
 
                   <div className="card-actions justify-center mt-5">
-                    <button className="rounded-sm hover:bg-[#59C2DA] bg-[#225f82] px-5 py-1.5 text-center text-white cursor-pointer">
+                    <Link
+                      href={`/book/${e?._id}`}
+                      className="rounded-sm hover:bg-[#59C2DA] bg-[#225f82] px-5 py-1.5 text-center text-white cursor-pointer">
                       View Details
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
