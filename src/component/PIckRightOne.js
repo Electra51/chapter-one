@@ -12,10 +12,11 @@ const PIckRightOne = ({ data }) => {
       </p>
       <div className="grid grid-cols-2 gap-8">
         <div className="flex justify-normal items-start gap-5 border border-gray-100 bg-gray-50 rounded-sm shadow-fuchsia-300">
-          <img
+          <Image
             src={data[0]?.image}
             alt={data[0]?.title}
-            width={240}
+            width={1300}
+            height={300}
             className="rounded-l-sm"
           />
           <div className="pr-6 pl-2">
