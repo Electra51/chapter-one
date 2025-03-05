@@ -3,8 +3,8 @@ import banner1Image from "../assets/slider.webp";
 
 const Banner = () => {
   return (
-    <div className="relative">
-      <div className=" absolute top-[30%] left-44 w-[760px]">
+    <div className="relative mx-auto w-[100%]">
+      <div className="absolute top-[30%] left-[15%] w-[760px]">
         <p className="text-[18px] mt-6 w-[650px] tracking-[0.01rem]">
           Year end sale
         </p>
@@ -19,7 +19,7 @@ const Banner = () => {
           Shop Now
         </button>
       </div>
-      <Image src={banner1Image} alt="" />
+      <Image src={banner1Image} alt="" className="w-[100%]" />
     </div>
   );
 };

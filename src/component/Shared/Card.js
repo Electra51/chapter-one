@@ -1,10 +1,13 @@
 import React from "react";
 import Star from "./Star";
 import Link from "next/link";
-
+import love from "../../assets/love.png";
+import Fakalove from "../../assets/fakalove.png";
+import Image from "next/image";
 const Card = ({ e }) => {
   return (
-    <div className="bg-base-100 group hover:bg-[#225f82] rounded-sm transition duration-300 shadow-md border border-gray-200 h-[460px]">
+    <div className="bg-base-100 group hover:bg-[#225f82] rounded-sm transition duration-300 shadow-md border border-gray-200 h-[460px] relative">
+      <Image src={Fakalove} alt="" className="h-5 w-5 absolute top-4 right-3" />
       <div className="flex justify-center items-center pt-6">
         <img src={e?.image} alt={e?.title} width={160} />
       </div>

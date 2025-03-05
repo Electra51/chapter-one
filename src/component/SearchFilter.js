@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import Card from "./Shared/Card";
 
 const SearchFilter = ({ data }) => {
-  console.log("data", data?.data);
   const [books, setBooks] = useState(data?.data);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
