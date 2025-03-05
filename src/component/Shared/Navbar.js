@@ -11,15 +11,15 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link href={"/"} className="tracking-[0.04rem]">
-          Wishlist
-        </Link>
-      </li>
-      <li>
         <Link href={"/book"} className="tracking-[0.04rem]">
           Books
         </Link>
       </li>{" "}
+      <li>
+        <Link href={"/"} className="tracking-[0.04rem]">
+          Wishlist
+        </Link>
+      </li>
       <li>
         <Link href={"/"} className="tracking-[0.04rem]">
           Contact
